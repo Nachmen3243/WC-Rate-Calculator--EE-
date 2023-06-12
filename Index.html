@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WC Rate Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="line" id="line1">
+            <div class="class-code">5190</div>
+            <div class="class-description">Electrical Wiring – Within Buildings</div>
+            <input class="payroll" type="number" min="1" value="1200000">
+            <div class="premium"></div>
+        </div>
+        <div class="line" id="line2">
+            <div class="class-code">5606</div>
+            <div class="class-description">Contractor – Executive Supervisor</div>
+            <input class="payroll" type="number" min="1" value="350000">
+            <div class="premium"></div>
+        </div>
+        <div class="line" id="line3">
+            <div class="class-code">8810</div>
+            <div class="class-description">Clerical Office Employees – NOC</div>
+            <input class="payroll" type="number" min="1" value="150000">
+            <div class="premium"></div>
+        </div>
+   
+        <div class="total">
+            <div>Total Payroll: <span id="totalPayroll"></span></div>
+            <div>Total Premium: <span id="totalPremium"></span></div>
+        </div>
+
+        <div>
+            Blanket Waiver of Subrogation Premium: <span id="waiverValue">2%</span>
+            <div>Waiver Premium: <span id="waiverPremium"></span></div>
+        </div>
+
+        <div>
+            Experience Modification: 
+            <input id="experienceMod" type="number" min="0.50" max="2.00" step="0.01" value="1.00">
+            <div>Total Premium (with experience mod and waiver): <span id="totalModifiedPremium"></span></div>
+        </div>
+
+        <div>
+            Schedule Modifier: 
+            <input id="scheduleModifier" type="number" min="0.95" max="1.05" step="0.01" value="0.95">
+            <div>Total Premium (with schedule modifier): <span id="scheduleModifiedPremium"></span></div>
+        </div>
+
+        <div>
+            Premium Discount: 
+            <input id="premiumDiscount" type="number" min="0.75" max="1.25" step="0.01" value="0.95">
+            <div>Discounted Premium: <span id="discountedPremium"></span></div>
+        </div>
+
+        <div>
+            Expense Constant: <span id="expenseConstant"></span>
+        </div>
+
+        <div>
+            Terrorism & Catastrophe Premium: <span id="terrorismPremium"></span>
+        </div>
+
+        <div>
+            NY State Assessment Premium: <span id="stateAssessmentPremium"></span>
+        </div>
+
+        <div>
+            Total (including NY State Assessment): <span id="totalIncludingStateAssessment"></span>
+        </div>
+
+        <div>
+            Assumed Dividend: 
+            <input id="assumedDividend" type="number" min="0.70" max="1.00" step="0.01" value="0.70">
+            <div>Dividend: <span id="dividend"></span></div>
+        </div>
+
+        <div>
+            Total (after dividend): <span id="totalAfterDividend"></span>
+        </div>
+
+        <div>
+            Lovell Safety Management Fee: <span id="lovellFee"></span>
+        </div>
+
+        <div>
+            Agency Commission: <span id="agencyCommission"></span>
+        </div>
+
+        <div>
+            Final Total: <span id="finalTotal"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(195, 239, 240);
+    color: rgb(249, 7, 249);
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.line, .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid purple;
+    margin-bottom: 10px;
+}
+
+.class-code, .class-description, .premium {
+    padding: 10px;
+    border: 1px solid purple;
+    margin-right: 10px;
+}
+
+.payroll {
+    width: 100px;
+}
